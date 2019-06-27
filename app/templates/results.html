@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Turtle Tracker</title>
+        <link href="static/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <style media = "screen">
+        body{
+            background-color: #b2dfdb;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <div class="teal darken-2 nav-wrapper">
+              <a href="#" class="brand-logo">Turtle Finder</a>
+              <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="/">Homepage</a></li>
+                <li><a href="/Cite">Citations</a></li>
+                <li><a href="/about">About</a></li>
+              </ul>
+            </div>
+         </nav>
+        <h1 class="teal white-text card-panel">{{state}} turtles!</h1>
+        <p>Here are some of the turtles found in {{state}}: {{turtle}}</p>
+    </body>
+</html>
