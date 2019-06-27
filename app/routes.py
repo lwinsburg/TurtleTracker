@@ -26,3 +26,7 @@ def about():
 @app.route('/Cite', methods=['GET', 'POST'])
 def Cite():
     return render_template('Cite.html')
+    
+@app.route("/FunFact", methods=['GET', 'POST'])
+def FunFact():
+    return render_template('FunFact.html')
