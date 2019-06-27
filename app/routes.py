@@ -12,7 +12,8 @@ def results():
     if request.method == 'GET':
         return "N/A"
     else:
-        userdata = formopener.dict_from(request.form)
+        # userdata = formopener.dict_from(request.form)
+        userdata = request.form
         print(userdata)
         state = userdata["state"]
         turtle = model.FindTurtle(state)
